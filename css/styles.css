@@ -1,0 +1,49 @@
+:root {
+    --white: #FFFFFF;
+    --gray: #2E2E2E;
+    --cian: #00FFFF;
+    --magenta: #FF00FF;
+    --yellow: #FFFF00;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--gray);
+}
+
+header {
+    background-color: var(--cian);
+    color: var(--gray);
+}
+
+button {
+    background-color: var(--cian);
+    color: var(--gray);
+    /*border: none;
+    padding: 10px 20px;
+    cursor: pointer;*/
+}
+
+button:hover {
+    background-color: var(--magenta);
+}
+
+nav {
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+a {
+    color: var(--magenta);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--yellow);
+}
