@@ -1,49 +1,67 @@
 :root {
+    --deep-blue: #0D3B66;
+    --bright-turquoise: #2EC4B6;
+    --solar-yellow: #FF9F1C;
+    --dark-gray: #3D3D3D;
     --white: #FFFFFF;
-    --gray: #2E2E2E;
-    --cian: #00FFFF;
-    --magenta: #FF00FF;
-    --yellow: #FFFF00;
-
 }
 
-* {
-    margin: 0;
-    box-sizing: border-box;
+.bgWhite {
+    background-color: var(--white);
+}
+
+.bgDeepBlue {
+    background-color: var(--deep-blue);
+}
+
+.bgBrightTurquoise {
+    background-color: var(--bright-turquoise);
+}
+
+.bgSolarYellow {
+    background-color: var(--solar-yellow);
+}
+
+.bgDarkGray {
+    background-color: var(--dark-gray);
 }
 
 body {
     background-color: var(--white);
-    color: var(--gray);
+    color: var(--dark-gray);
 }
 
 header {
-    background-color: var(--cian);
-    color: var(--gray);
-}
-
-button {
-    background-color: var(--cian);
-    color: var(--gray);
-    /*border: none;
-    padding: 10px 20px;
-    cursor: pointer;*/
-}
-
-button:hover {
-    background-color: var(--magenta);
-}
-
-nav {
-    background-color: var(--gray);
+    background-color: var(--deep-blue);
     color: var(--white);
 }
 
-a {
-    color: var(--magenta);
+header a {
+    color: var(--white);
+}
+
+button {
+    background-color: var(--bright-turquoise);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--solar-yellow);
+}
+
+nav {
+    background-color: var(--deep-blue);
+    color: var(--white);
+}
+
+nav a {
+    color: var(--white);
     text-decoration: none;
 }
 
-a:hover {
-    color: var(--yellow);
+nav a:hover {
+    color: var(--bright-turquoise);
 }
