@@ -6,44 +6,170 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <script defer src="js/bootstrap.bundle.js"></script>
+  <script defer src="js/form.js"></script>
   <link rel="icon" type="image/png" href="img/jesus.png">
-  <title>Jesús Casais Carrillo</title>
+  <title>Contacto - Jesús Casais Carrillo</title>
 </head>
 <body>
     <!-- Header -->
     <header class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-        <a class="navbar-brand" href="#">Jesús Casais Carrillo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#inicio">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#proyects">Proyectos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">Sobre Mí</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#contact">Contacto</a>
-            </li>
-            </ul>
-        </div>
+            <a class="navbar-brand" href="index.html">Jesús Casais Carrillo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
-    
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">¡Contáctame!</h2>
+            <form id="contactForm">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Género</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required>
+                        <label class="form-check-label" for="genderMale">
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required>
+                        <label class="form-check-label" for="genderFemale">
+                            Femenino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="genderOther" value="other" required>
+                        <label class="form-check-label" for="genderOther">
+                            Otro
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="reason" class="form-label">Motivo de la Consulta</label>
+                    <select class="form-select" id="reason" required>
+                        <option selected disabled value="">Seleccione...</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="soporte">Soporte</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="terms" required>
+                    <!-- Label con atributos data-bs-toggle y data-bs-target para abrir el modal -->
+                <label class="form-check-label" for="terms" data-bs-toggle="modal" data-bs-target="#termsModal">
+                    Acepto los <span class="text-primary">términos y condiciones</span>
+                </label>
+                </div>
+                <button type="button" class="btn btn-primary" id="submitButton">Enviar</button>
+            </form>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Enviar formulario</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ¿Seguro que quieres enviar el formulario de contacto?
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, quiero corregir algo</button>
+                <button type="submit" class="btn btn-primary" id="confirmButton">Sí, envíalo</button>
+                </div>
+            </div>
+            </div>
+        </div>
 
 
-   
+        <!-- Modal de términos y condiciones -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalTitle" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="termsModalTitle">Términos y Condiciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><span class="fw-bold">Uso Apropiado:</span> Este formulario de contacto está destinado únicamente para uso legítimo y no comercial. El envío de mensajes inapropiados, spam o contenido ofensivo está estrictamente prohibido.</p>
+                    <br>
+                    <p><span class="fw-bold">Privacidad de la Información:</span> La información proporcionada en este formulario será utilizada únicamente con el propósito de responder a tu consulta o solicitud. Nos comprometemos a proteger la privacidad y confidencialidad de tus datos personales de acuerdo con nuestra política de privacidad.</p>
+                    <br>
+                    <p><span class="fw-bold">Exactitud de la Información:</span> Te comprometes a proporcionar información precisa y veraz en este formulario. Cualquier información falsa o engañosa puede dar lugar a la negación de tu solicitud o consulta.</p>
+                    <br>
+                    <p><span class="fw-bold">Responsabilidad del Usuario:</span> Al enviar este formulario, aceptas que eres el único responsable del contenido de tu mensaje y de cualquier consecuencia derivada de su envío.</p>
+                    <br>
+                    <p><span class="fw-bold">Uso de Cookies:</span> Este sitio web puede utilizar cookies para mejorar tu experiencia de usuario. Al enviar este formulario, aceptas el uso de cookies de acuerdo con nuestra política de cookies.</p>
+                    <br>    
+                    <p><span class="fw-bold">Modificaciones:</span> Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Se te notificará de cualquier cambio mediante la publicación de los términos y condiciones actualizados en este sitio web.</p>
+                    <br>
+                    <p><span class="fw-bold">Al utilizar este formulario de contacto, aceptas estos términos y condiciones en su totalidad. Si no estás de acuerdo con alguno de estos términos, por favor abstente de utilizar este formulario.</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+
+
+    </section>
+
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-        <p>&copy; 2024 Jesús Casais Carrillo | Todos los derechos reservados</p>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 text-md-start text-sm-center">
+                    <p>&copy; 2024 Jesús Casais Carrillo | Todos los derechos reservados</p>
+                </div>
+                <div class="col-md-6 col-sm-12 text-md-end text-sm-center">
+                    <a href="cv/CV_JesusCasaisCarrillo.pdf" class="btn btn-outline-light me-2" download>CV</a>
+                    <a href="https://www.linkedin.com/in/jes%C3%BAs-casais-carrillo-jcasaiscar/" class="btn btn-outline-light me-2" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/JCasaisCar" class="btn btn-outline-light" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
