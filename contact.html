@@ -37,12 +37,14 @@
         </div>
     </header>
 
+
+    <!-- Arreglar lo de las vistas -->
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">¡Contáctame!</h2>
             <form id="contactForm">
-                <div class="row mb-3">
+                <div class="row mb-lg-4 mb-md-5">
                     <div class="col-md-6">
                         <label for="firstName" class="form-label fw-semibold">Nombre</label>
                         <input type="text" class="form-control" id="firstName" required>
@@ -52,7 +54,7 @@
                         <input type="text" class="form-control" id="lastName" required>
                     </div>
                 </div>
-                <div class="mb-3">
+                <div class="mb-lg-4 mb-md-5 mb-sm-5">
                     <label class="form-label fw-semibold">Género</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required>
@@ -73,11 +75,11 @@
                         </label>
                     </div>
                 </div>
-                <div class="mb-3">
+                <div class=" mb-lg-4 mb-md-5 mb-sm-5">
                     <label for="email" class="form-label fw-semibold">Correo Electrónico</label>
                     <input type="email" class="form-control" id="email" required>
                 </div>
-                <div class="mb-3">
+                <div class=" mb-lg-4 mb-md-5 mb-sm-5">
                     <label for="reason" class="form-label fw-semibold">Motivo de la Consulta</label>
                     <select class="form-select" id="reason" required>
                         <option selected disabled value="">Seleccione...</option>
@@ -88,18 +90,18 @@
                         <option value="otro">Otro motivo</option>
                     </select>
                 </div>
-                <div class="mb-3">
+                <div class=" mb-lg-4 mb-md-5 mb-sm-5">
                     <label for="message" class="form-label fw-semibold">Mensaje</label>
                     <textarea class="form-control" id="message" rows="3" required></textarea>
                 </div>
-                <div class="form-check mb-3">
+                <div class="form-check mb-lg-4 mb-md-5 mb-sm-5">
                     <input class="form-check-input" type="checkbox" id="terms" required>
                     <!-- Label con atributos data-bs-toggle y data-bs-target para abrir el modal -->
-                <label class="form-check-label fw-semibold" for="terms" data-bs-toggle="modal" data-bs-target="#termsModal">
-                    Acepto los <span class="text-primary">términos y condiciones</span>
-                </label>
+                    <label class="form-check-label fw-semibold" for="terms" data-bs-toggle="modal" data-bs-target="#termsModal">
+                        Acepto los <span class="text-primary">términos y condiciones</span>
+                    </label>
                 </div>
-                <button type="button" class="btn btn-primary" id="submitButton">Enviar</button>
+                <button type="button" class="btn btn-primary mb-lg-4 mb-md-5 mt-md-3 mb-sm-5" id="submitButton">Enviar</button>
             </form>
         </div>
 
@@ -123,35 +125,35 @@
         </div>
 
 
-        <!-- Modal de términos y condiciones -->
-    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalTitle" aria-modal="true" role="dialog">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="termsModalTitle">Términos y Condiciones</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p><span class="fw-bold">Uso Apropiado:</span> Este formulario de contacto está destinado únicamente para uso legítimo y no comercial. El envío de mensajes inapropiados, spam o contenido ofensivo está estrictamente prohibido.</p>
-                    <br>
-                    <p><span class="fw-bold">Privacidad de la Información:</span> La información proporcionada en este formulario será utilizada únicamente con el propósito de responder a tu consulta o solicitud. Nos comprometemos a proteger la privacidad y confidencialidad de tus datos personales de acuerdo con nuestra política de privacidad.</p>
-                    <br>
-                    <p><span class="fw-bold">Exactitud de la Información:</span> Te comprometes a proporcionar información precisa y veraz en este formulario. Cualquier información falsa o engañosa puede dar lugar a la negación de tu solicitud o consulta.</p>
-                    <br>
-                    <p><span class="fw-bold">Responsabilidad del Usuario:</span> Al enviar este formulario, aceptas que eres el único responsable del contenido de tu mensaje y de cualquier consecuencia derivada de su envío.</p>
-                    <br>
-                    <p><span class="fw-bold">Uso de Cookies:</span> Este sitio web puede utilizar cookies para mejorar tu experiencia de usuario. Al enviar este formulario, aceptas el uso de cookies de acuerdo con nuestra política de cookies.</p>
-                    <br>    
-                    <p><span class="fw-bold">Modificaciones:</span> Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Se te notificará de cualquier cambio mediante la publicación de los términos y condiciones actualizados en este sitio web.</p>
-                    <br>
-                    <p><span class="fw-bold">Al utilizar este formulario de contacto, aceptas estos términos y condiciones en su totalidad. Si no estás de acuerdo con alguno de estos términos, por favor abstente de utilizar este formulario.</span></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <!-- Modal de términos y condiciones -->
+        <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalTitle" aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="termsModalTitle">Términos y Condiciones</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><span class="fw-bold">Uso Apropiado:</span> Este formulario de contacto está destinado únicamente para uso legítimo y no comercial. El envío de mensajes inapropiados, spam o contenido ofensivo está estrictamente prohibido.</p>
+                        <br>
+                        <p><span class="fw-bold">Privacidad de la Información:</span> La información proporcionada en este formulario será utilizada únicamente con el propósito de responder a tu consulta o solicitud. Nos comprometemos a proteger la privacidad y confidencialidad de tus datos personales de acuerdo con nuestra política de privacidad.</p>
+                        <br>
+                        <p><span class="fw-bold">Exactitud de la Información:</span> Te comprometes a proporcionar información precisa y veraz en este formulario. Cualquier información falsa o engañosa puede dar lugar a la negación de tu solicitud o consulta.</p>
+                        <br>
+                        <p><span class="fw-bold">Responsabilidad del Usuario:</span> Al enviar este formulario, aceptas que eres el único responsable del contenido de tu mensaje y de cualquier consecuencia derivada de su envío.</p>
+                        <br>
+                        <p><span class="fw-bold">Uso de Cookies:</span> Este sitio web puede utilizar cookies para mejorar tu experiencia de usuario. Al enviar este formulario, aceptas el uso de cookies de acuerdo con nuestra política de cookies.</p>
+                        <br>    
+                        <p><span class="fw-bold">Modificaciones:</span> Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Se te notificará de cualquier cambio mediante la publicación de los términos y condiciones actualizados en este sitio web.</p>
+                        <br>
+                        <p><span class="fw-bold">Al utilizar este formulario de contacto, aceptas estos términos y condiciones en su totalidad. Si no estás de acuerdo con alguno de estos términos, por favor abstente de utilizar este formulario.</span></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
         
 
 
