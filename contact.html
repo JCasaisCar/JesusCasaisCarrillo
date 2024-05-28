@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header class="navbar navbar-expand-lg navbar-dark bgDeepBlue">
         <div class="container">
             <a class="navbar-brand" href="index.html">Jesús Casais Carrillo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,16 +44,16 @@
             <form id="contactForm">
                 <div class="row mb-3">
                     <div class="col-md-6">
-                        <label for="firstName" class="form-label">Nombre</label>
+                        <label for="firstName" class="form-label fw-semibold">Nombre</label>
                         <input type="text" class="form-control" id="firstName" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="lastName" class="form-label">Apellidos</label>
+                        <label for="lastName" class="form-label fw-semibold">Apellidos</label>
                         <input type="text" class="form-control" id="lastName" required>
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Género</label>
+                    <label class="form-label fw-semibold">Género</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required>
                         <label class="form-check-label" for="genderMale">
@@ -74,11 +74,11 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <label for="email" class="form-label fw-semibold">Correo Electrónico</label>
                     <input type="email" class="form-control" id="email" required>
                 </div>
                 <div class="mb-3">
-                    <label for="reason" class="form-label">Motivo de la Consulta</label>
+                    <label for="reason" class="form-label fw-semibold">Motivo de la Consulta</label>
                     <select class="form-select" id="reason" required>
                         <option selected disabled value="">Seleccione...</option>
                         <option value="consulta">Consulta</option>
@@ -87,13 +87,13 @@
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Mensaje</label>
+                    <label for="message" class="form-label fw-semibold">Mensaje</label>
                     <textarea class="form-control" id="message" rows="3" required></textarea>
                 </div>
                 <div class="form-check mb-3">
                     <input class="form-check-input" type="checkbox" id="terms" required>
                     <!-- Label con atributos data-bs-toggle y data-bs-target para abrir el modal -->
-                <label class="form-check-label" for="terms" data-bs-toggle="modal" data-bs-target="#termsModal">
+                <label class="form-check-label fw-semibold" for="terms" data-bs-toggle="modal" data-bs-target="#termsModal">
                     Acepto los <span class="text-primary">términos y condiciones</span>
                 </label>
                 </div>
@@ -157,7 +157,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bgDeepBlue text-white text-center py-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12 text-md-start text-sm-center">
