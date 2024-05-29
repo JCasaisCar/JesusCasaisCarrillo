@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <script defer src="js/bootstrap.bundle.js"></script>
+  <script defer src="js/alerts.js"></script>
   <link rel="icon" type="image/png" href="img/jesusNoBackground.png">
   <title>Proyectos - Jesús Casais Carrillo</title>
 </head>
@@ -41,58 +42,68 @@
         <div class="container">
             <h2 class="text-center mb-5">Proyectos</h2>
             <div class="row">
+                <!-- NexTrade Project -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card mb-4">
-                        <img src="img/NexTrade.png" class="card-img-top" alt="Proyecto 1">
+                        <img src="img/NexTrade.png" class="card-img-top" alt="NexTrade">
                         <div class="card-body">
                             <h5 class="card-title">NexTrade</h5>
                             <p class="card-text">Maravilloso Sistema de Ventas realizado con Java y SQL</p>
+                            <div id="nexTradePlaceholder"></div>
                             <a href="https://github.com/JCasaisCar/NexTrade" class="btn btn-primary" target="_blank">Ver más</a>
-                            <a href="https://github.com/JCasaisCar/NexTrade/archive/refs/tags/v.1.1.zip" class="btn btn-secondary">Descargar</a>
+                            <a href="https://github.com/JCasaisCar/NexTrade/archive/refs/tags/v.1.1.zip" class="btn btn-secondary" id="nexTradeAlert">Descargar</a>
                         </div>
                     </div>
                 </div>
+                <!-- BanditChasePage Project -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card mb-4">
-                        <img src="img/BanditChasePage.png" class="card-img-top" alt="Proyecto 2">
+                        <img src="img/BanditChasePage.png" class="card-img-top" alt="BanditChasePage">
                         <div class="card-body">
                             <h5 class="card-title">BanditChasePage</h5>
                             <p class="card-text">Página creada especialmente para un videojuego como proyecto del 2 trimestre de 1 DAW llamado BanditChase</p>
+                            <div id="banditChasePagePlaceholder"></div>
                             <a href="https://github.com/JCasaisCar/BanditChasePage" class="btn btn-primary" target="_blank">Ver más</a>
-                            <a href="https://github.com/JCasaisCar/BanditChasePage/archive/refs/tags/v.1.0.zip" class="btn btn-secondary">Descargar</a>
+                            <a href="https://github.com/JCasaisCar/BanditChasePage/archive/refs/tags/v.1.0.zip" class="btn btn-secondary" id="banditChasePageAlert">Descargar</a>
                         </div>
                     </div>
                 </div>
+                <!-- IlernaEncantado Project -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card mb-4">
-                        <img src="img/IlernaEncantado.png" class="card-img-top" alt="Proyecto 2">
+                        <img src="img/IlernaEncantado.png" class="card-img-top" alt="IlernaEncantado">
                         <div class="card-body">
                             <h5 class="card-title">IlernaEncantado</h5>
                             <p class="card-text">Página creada como proyecto de Halloween para ILERNA Sevilla</p>
+                            <div id="ilernaEncantadoPlaceholder"></div>
                             <a href="https://github.com/JCasaisCar/IlernaEncantado" class="btn btn-primary" target="_blank">Ver más</a>
-                            <a href="https://github.com/JCasaisCar/IlernaEncantado/archive/refs/tags/v.1.0.zip" class="btn btn-secondary">Descargar</a>
+                            <a href="https://github.com/JCasaisCar/IlernaEncantado/archive/refs/tags/v.1.0.zip" class="btn btn-secondary" id="ilernaEncantadoAlert">Descargar</a>
                         </div>
                     </div>
                 </div>
+                <!-- BinarioDecimal Project -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card mb-4">
-                        <img src="img/BinarioDecimal.png" class="card-img-top" alt="Proyecto 3">
+                        <img src="img/BinarioDecimal.png" class="card-img-top" alt="BinarioDecimal">
                         <div class="card-body">
                             <h5 class="card-title">BinarioDecimal</h5>
                             <p class="card-text">Programa por consola en Java creado para convertir de binario a decimal y viceversa</p>
+                            <div id="binarioDecimalPlaceholder"></div>
                             <a href="https://github.com/JCasaisCar/BinarioDecimal" class="btn btn-primary" target="_blank">Ver más</a>
-                            <a href="https://github.com/JCasaisCar/BinarioDecimal/archive/refs/tags/v.1.0.zip" class="btn btn-secondary">Descargar</a>
+                            <a href="https://github.com/JCasaisCar/BinarioDecimal/archive/refs/tags/v.1.0.zip" class="btn btn-secondary" id="binarioDecimalAlert">Descargar</a>
                         </div>
                     </div>
                 </div>
+                <!-- ScapeFromJoseka Project -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card mb-4">
-                        <img src="img/ScapeFromJoseka.png" class="card-img-top" alt="Proyecto 3">
+                        <img src="img/ScapeFromJoseka.png" class="card-img-top" alt="ScapeFromJoseka">
                         <div class="card-body">
                             <h5 class="card-title">ScapeFromJoseka</h5>
                             <p class="card-text">Juego creado para la asignatura de Sistemas Informáticos que tiene como protagonista a Joseka</p>
+                            <div id="scapeFromJosekaPlaceholder"></div>
                             <a href="https://github.com/JCasaisCar/ScapeFromJoseka" class="btn btn-primary" target="_blank">Ver más</a>
-                            <a href="https://github.com/JCasaisCar/ScapeFromJoseka/archive/refs/tags/v.1.0.zip" class="btn btn-secondary">Descargar</a>
+                            <a href="https://github.com/JCasaisCar/ScapeFromJoseka/archive/refs/tags/v.1.0.zip" class="btn btn-secondary" id="scapeFromJosekaAlert">Descargar</a>
                         </div>
                     </div>
                 </div>
