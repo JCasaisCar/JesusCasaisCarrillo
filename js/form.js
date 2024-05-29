@@ -5,24 +5,23 @@ document.addEventListener("DOMContentLoaded", function() {
     var form = document.getElementById("contactForm");
 
     submitButton.addEventListener("click", function(event) {
-        // Validar el formulario
+        //Validate the form
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
             form.classList.add("was-validated");
         } else {
-            // Mostrar el modal si el formulario es válido
+            //Show the modal if the form is valid and store it in a variable
             var modal = new bootstrap.Modal(document.getElementById("staticBackdrop"));
             modal.show();
         }
     });
 
     confirmButton.addEventListener("click", function() {
-        // Limpiar el formulario
+        //Reset the form
         form.reset();
-        // Cerrar el modal
+        //Close the modal
         var modal = bootstrap.Modal.getInstance(document.getElementById("staticBackdrop"));
         modal.hide();
     });
 });
-
